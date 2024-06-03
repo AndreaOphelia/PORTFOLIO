@@ -1,0 +1,46 @@
+/* .move {
+  position: relative;
+  animation: move-words 7s linear infinite;
+  margin: 0;
+}
+
+@keyframes move-words {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+} */
+
+.smoke {
+  position: relative;
+  animation: smoke 7s linear infinite;
+}
+@keyframes smoke {
+  0% {
+    opacity: 0.2;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  25% {
+    opacity: 0.5;
+
+    text-shadow: 0 0 20px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  }
+  50% {
+    opacity: 0.6;
+
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+  }
+  75% {
+    opacity: 0.7;
+
+    text-shadow: 0 0 40px rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    opacity: 0.8;
+
+    text-shadow: 0 0 50px rgba(255, 255, 255, 0.1);
+  }
+}

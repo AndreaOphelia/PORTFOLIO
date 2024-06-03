@@ -1,0 +1,189 @@
+h1 {
+  color: white;
+  padding: 10px;
+  font-size: xxx-large;
+  font-weight: bolder;
+}
+
+header ul {
+  display: flex;
+  font-size: larger;
+  list-style: none;
+  padding: 30px;
+  margin: 30px;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+img {
+  max-width: 100%;
+  filter: grayscale(100%);
+  margin: 10px;
+  padding: 10px;
+}
+
+video {
+  max-width: 100%;
+  display: block;
+}
+
+#smokevideo {
+  opacity: 0.4;
+}
+.video-container {
+  position: relative;
+}
+
+.video-tekst {
+  position: absolute;
+  top: 15%;
+  left: 30%;
+}
+
+/* .tekst {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  box-sizing: border-box;
+} */
+
+p {
+  color: white;
+  max-width: 300px;
+  padding: 20px;
+}
+
+#bgvideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-width: 600px) {
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+  }
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+}
+
+@media (max-width: 599px) {
+}
+
+.tema {
+  position: relative;
+  overflow: hidden;
+}
+
+.tema img {
+  width: 300px;
+  height: 200px;
+  filter: grayscale(100%);
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  transition: mask 0.5s ease;
+}
+
+.tema img:hover {
+  filter: grayscale(0%);
+  transition: filter 0.5 ease;
+  transform: scale(1.5);
+  mask: none;
+}
+
+.nummer1 {
+  mask: url(SVG/1_2.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 150px;
+}
+
+.nummer2 {
+  mask: url(SVG/2.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 150px;
+}
+
+.nummer3 {
+  mask: url(SVG/3.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 200px;
+}
+
+.nummer4 {
+  mask: url(SVG/4.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 150px;
+}
+
+.nummer5-1 {
+  mask: url(SVG/5.1.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 300px;
+}
+
+.nummer5-2 {
+  mask: url(SVG/5.2.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 250px;
+}
+
+.container {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.container img {
+  width: 300px;
+  height: 200px;
+  display: block;
+  transition: filter 0.5s ease;
+}
+
+.tekst-box {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent sort baggrund */
+  color: #fff; /* Hvid tekstfarve */
+  /* padding: 10px; */
+  border-radius: 0px;
+  text-align: left;
+  opacity: 0; /* Start som usynlig */
+}
+
+.container:hover img {
+  filter: blur(15px);
+}
+
+.container:hover .tekst-box {
+  opacity: 1;
+  z-index: 1;
+}
