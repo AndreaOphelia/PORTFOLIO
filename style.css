@@ -18,6 +18,9 @@ h2 {
     0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5);
 }
 
+h2 {
+  font-size: 3vw;
+}
 p {
   max-width: 300px;
   padding: 20px;
