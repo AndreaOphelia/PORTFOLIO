@@ -12,6 +12,7 @@ a {
 h1,
 h2,
 h3 {
+  text-align: center;
   padding: 10px;
   font-weight: bolder;
   font-size: 5vw;
@@ -22,14 +23,16 @@ h3 {
 h2 {
   font-size: 3vw;
 }
+
 h3 {
   font-size: 2vw;
 }
+
 p {
-  max-width: 300px;
+  max-width: 900px;
   padding: 30px;
-  line-height: 130%;
-  font-size: larger;
+  line-height: 140%;
+  font-size: 1.7vw;
 }
 header ul {
   display: flex;
@@ -58,7 +61,7 @@ video {
 }
 
 #smokevideo {
-  opacity: 0.4;
+  opacity: 0.8;
 }
 .video-container {
   position: relative;
@@ -67,7 +70,7 @@ video {
 .video-tekst {
   position: absolute;
   top: 15%;
-  left: 30%;
+  left: 35%;
 }
 
 #bgvideo {
@@ -86,10 +89,12 @@ video {
   .grid_1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
   }
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 }
 
@@ -111,7 +116,7 @@ video {
 .tema img:hover {
   filter: grayscale(0%);
   transition: filter 0.5 ease;
-  transform: scale(1.5);
+  transform: scale(2);
   mask: none;
 }
 
@@ -119,28 +124,28 @@ video {
   mask: url(SVG/1_2.svg);
   mask-repeat: no-repeat;
   mask-position: center;
-  mask-size: 150px;
+  mask-size: 110px;
 }
 
 .nummer2 {
   mask: url(SVG/2.svg);
   mask-repeat: no-repeat;
   mask-position: center;
-  mask-size: 150px;
+  mask-size: 120px;
 }
 
 .nummer3 {
   mask: url(SVG/3.svg);
   mask-repeat: no-repeat;
   mask-position: center;
-  mask-size: 200px;
+  mask-size: 150px;
 }
 
 .nummer4 {
   mask: url(SVG/4.svg);
   mask-repeat: no-repeat;
   mask-position: center;
-  mask-size: 150px;
+  mask-size: 135px;
 }
 
 .nummer5-1 {
@@ -154,47 +159,20 @@ video {
   mask: url(SVG/5.2.svg);
   mask-repeat: no-repeat;
   mask-position: center;
-  mask-size: 250px;
+  mask-size: 220px;
 }
 
 .container {
-  position: relative;
+  border: #fff;
   width: 100%;
   height: auto;
-  /* overflow: hidden; */
-  margin: 10px;
-  padding: 10px;
+  /* border-style: dashed; */
+  margin: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
-.container img {
-  width: 300px;
-  height: 170px;
-  display: block;
-  transition: filter 0.5s ease;
-  padding: 10px;
-}
-
-.tekst-box {
-  position: absolute;
-  top: 85%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent sort baggrund */
-  color: #fff; /* Hvid tekstfarve */
-  border-radius: 0px;
-  text-align: left;
-  opacity: 0; /* Start som usynlig */
-}
-
-.container:hover img {
-  filter: blur(15px);
-}
-
-.container:hover .tekst-box {
-  opacity: 1;
-  z-index: 1;
-  /* width: 300px;
-  height: 300px; */
+img:hover {
+  filter: blur(5px);
 }
 
 .bar {
@@ -211,14 +189,9 @@ video {
 }
 
 .nav-menu {
-  /* display: flex; */
   justify-content: space-between;
   align-items: center;
 }
-
-/* .nav-item {
-  margin-left: rem;
-} */
 
 .nav-link {
   font-size: 2vw;
@@ -256,18 +229,4 @@ video {
     display: block;
     cursor: pointer;
   }
-
-  /* .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active .bar:nth-child(1) {
-    translate: 0 8px;
-    rotate: 45deg;
-  }
-
-  .hamburger.active .bar:nth-child(3) {
-    translate: 0 -8px;
-    rotate: -45deg;
-  } */
 }

@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 241.89 104.11">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 241.9 104.1">
   <defs>
     <style>
-      .cls-1 {
+      .cls-1, .cls-2 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
         fill: #221f20;
         font-family: Times-Bold, Times;
         font-size: 130px;
@@ -10,5 +14,7 @@
       }
     </style>
   </defs>
-  <text class="cls-1" transform="translate(37.54 95.33)"><tspan x="0" y="0">5.1</tspan></text>
+  <g class="cls-1">
+    <text class="cls-2" transform="translate(37.5 95.3)"><tspan x="0" y="0">5</tspan></text>
+  </g>
 </svg>
