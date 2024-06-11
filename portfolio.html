@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="animation.css" />
@@ -34,25 +35,10 @@
       </nav>
     </header>
     <main>
-      <div class="video-container">
-        <video autoplay muted loop id="smokevideo">
-          <source src="video/smokein.mp4" />
-        </video>
-        <div class="video-tekst">
-          <div>
-            <h1>ANDREA</h1>
-          </div>
-          <div>
-            <h1>OPHELIA'S</h1>
-          </div>
-          <div>
-            <h1>PORTFOLIO</h1>
-          </div>
-        </div>
-      </div>
+      <div class="title"><h1>Andrea Ophelias Portfolio</h1></div>
 
       <video autoplay muted loop id="bgvideo">
-        <source src="video/2297636-uhd_3840_2160_30fps.mp4" />
+        <source src="video/starts.mp4" />
       </video>
       <h1>Projekter</h1>
       <div class="grid_1-1">
@@ -60,25 +46,31 @@
           ><img src="img/T1.webp" alt="tema1" />
         </a>
         <div class="container">
-          <h2>Grundlæggende Web 1</h2>
+          <h2 id="web1">Grundlæggende Web 1</h2>
           <p>
             På temaet har jeg fået en forståelse for brugen af HTML og CSS
             herunder hvordan man opbygger en website og gør den responsiv.
             Herudover har jeg lært at arbejde i figma og bruge forskellige
-            værktøjer indefor programmet.  Jeg har også lært forskellige
+            værktøjer indefor programmet. Jeg har også lært forskellige
             designkonventioner, gestaltlove og hvilke værktøjer man i sin design
             process kan gøre brug af- dette inkluderer, moodboards, stiletyles,
             wireframes, fonte mm. Denne viden har jeg brugt til at udvikle mit
-            første mobilefirst-site 
+            første mobilefirst-site
           </p>
         </div>
         <div class="container">
-          <h2>Grundlæggende Web 2</h2>
+          <h2 id="web2">Grundlæggende Web 2</h2>
           <p>
-            På temaet har jeg lært at arbejde med en semantisk HTML struktur,
-            samt grids, flex og media queries for at udvikle website. Her brugte
-            jeg mine tillærte færdigheder fra mobilefirst til at udvikle mit
-            computer-website.
+            På temaet har jeg lært at udvikle et site ud fra digital prototype
+            og layoutdiagram. Herunder er der brugt UX/UI konventioner til at
+            skabe indhold til udvalgte brugertyper. Her strukturerede jeg min
+            process ud fra mine tillærte kompetencer i figma, hvor jeg lavede
+            moodboard og stiletyles, undersøgte målgruppe og brugertyper-og
+            brugerrejser. Jeg har dermed udarbejdet et emnesite vha. min viden
+            om design, sketching mm. der er blevet testet i tænkehøjt test,
+            5-second test og lighthouse test for at sikre at mit site levede op
+            til de tanker jeg havde gjort mig om sitet og dermed kunne det
+            tilrettes efter test.
           </p>
         </div>
         <a href="https://andreaophelia.dk/web1/website/website/" target="_blank"
@@ -91,7 +83,7 @@
           ><img src="img/T3.webp" alt="tema3" />
         </a>
         <div class="container">
-          <h2>Grundlæggende UX/UI</h2>
+          <h2 id="uxui">Grundlæggende UX/UI</h2>
           <p>
             På temaet har jeg lært at udvikle et site ud fra digital prototype
             og layoutdiagram. Herunder er der brugt UX/UI konventioner til at
@@ -101,17 +93,19 @@
           </p>
         </div>
         <div class="container">
-          <h2>Grundlæggende Animation</h2>
+          <h2 id="animation">Grundlæggende Animation</h2>
           <p>
-            På temaet har jeg udviklet et spil. Dette har jeg gjort vha. min
-            tillærte viden om skitseringsteknikker, paperprototypes mm. Til
-            udviklingen har jeg fået kendskab ti illustator, svg formater og
-            javascript. Hertil har jeg brugt formgivnings- og
-            kompositionsprincipper til at designe spil elementerne- Herunder
-            figurerer, UI elementer og skærmdesigns. Dertil har jeg lært at
-            animere i CSS. For at udvikle og implementere spillet har jeg gjort
-            brug af min tillærte viden om aktivitets- og state machine
-            diagrammer.
+            På temaet har jeg udviklet et spil. Jeg påbegyndte processen med en
+            brainstorm hvorefter jeg fik udvalgt min ide. Derefter begyndte jeg
+            at udvikle kitser, paperprototypes mm. udviklingen har jeg fået
+            kendskab til illustrator, svg formater og Javascript. Hertil har jeg
+            brugt formgivnings- og kompositionsprincipper til at designe spil
+            elementerne- Herunder figurerer, UI elementer og skærmdesigns.
+            Dertil har jeg lært at animere i CSS. For at udvikle og implementere
+            spillet har jeg gjort brug af min tillærte viden om aktivitets- og
+            state machine diagrammer. Spillet blev efterfølgene testet i en
+            survey for at undersøge om spillet gav mening, og det var tydeligt
+            at forstå hvad det gik ud på og om indhold og design passede sammen.
           </p>
         </div>
         <a href="https://andreaophelia.dk/Animation/website/" target="_blank">
@@ -122,7 +116,7 @@
           <img src="img/T5.1.webp" alt="tema5.1" />
         </a>
         <div class="container">
-          <h2>Grundlæggende Indhold 1</h2>
+          <h2 id="indhold1">Grundlæggende Indhold 1</h2>
           <h3>Passionssite</h3>
           <p>
             I forløbet har jeg lært forskellige filmformater, hvilke der egner
@@ -133,19 +127,33 @@
             derudovern fået kendskab til premiere pro, herunder fotostil,
             colors, beskæring og redigering. Derudover har jeg lært
             videoimplementeringsmetoder- herunder youtube. Hertil har jeg brugt
-            mine tidligere tillærte kompetencer inden for brugergrænseflader til
-            at udvikle et passionssite.
+            mine tidligere tillærte kompetencer om grid og layout og min viden
+            om brugergrænseflader til at udvikle et passionssite.
           </p>
         </div>
         <div class="container">
-          <h2>Grundlæggende Indhold 2</h2>
+          <h2 id="indhold3">Grundlæggende Indhold 2</h2>
           <h3>virksomhedssite</h3>
           <p>
             På forløbet har jeg lavet en overbygning af mine kompetencer fra
-            passionssite til at udvikle et virksomhedssite. I temaet har jeg
-            lært at gruppesamarbejde, vha. af scrum, trello og github og dermed
-            skabe et fælles redesign af en virksomhedshjemmeside. Her har vi
-            valgt at implemntere bl.a lottiefiles, css grids og forms mm.
+            passionssite til at udvikle et virksomhedssite for en slagter. Her
+            har jeg brugt videoteknikker fra passionssite til at kreere en video
+            til sitet. Derudover valgte vi at lave interview for at sikre os at
+            vi ramte virksomhedens visioner om hjemmesiden bedst muligt.
+            Derudover testede vi den tidligere hjemmeside i lighthouse for at se
+            om vi kunne forbedre præstationen i vores redesign. Derefter
+            påbegyndte vi vores designprocess i figma, hvor vi valgte at lave
+            desktopresearch for at undersøge andre slagterhjemmesider, for at
+            blive klogere på hvordan emnet formidles til måægruppen Derudover
+            lavede vi styletiles og moodboards for at afklare hvilken stil vi
+            ønskede at ramme. Derefter udviklede vi digitaleprototyper så vi
+            vidste præcis hvordan sitet skulle opbygges i kode. Til sidst
+            testede vi sitet i 5 sekunderstest for at finde ud af om der var
+            ting på sitet der kunne ændres for at forbedre brugeroplevelsen på
+            sitet. Derudover lærte jeg at gruppesamarbejde, vha. af scrum,
+            trello og github og dermed skabe et fælles redesign af en
+            virksomhedshjemmesiden. Her har vi valgt at implementere bl.a
+            lottiefiles, css grids og forms mm.
           </p>
         </div>
         <a
@@ -155,11 +163,9 @@
           <img src="img/T5.2.webp" alt="tema5.2" />
         </a>
       </div>
-     
-      </div>
     </main>
     <footer>
-    <p> &copy; 2024 Andrea Ophelia Toth</p>
+      <p>&copy; 2024 Andrea Ophelia Toth</p>
     </footer>
     <script src="javascript.js"></script>
   </body>
